@@ -1,3 +1,2 @@
 #!/bin/bash
 echo "ibase=base water; $WATER + ibase=base stir; $STIR" | bc -lq | tr -d '\n' | bc -lq | tr -d '\n' | tr -d '\\' | tr -d '\n' | rev
-
