@@ -1,2 +1,2 @@
 #!/bin/bash
-WATER="ewwatratewa"; STIR="ti.itirtrtr"; RESULT=""; for ((i=0; i<${#WATER}; i++)); do CHAR1="${WATER:$i:1}"; CHAR2="${STIR:$i:1}"; SUM=$(( (36#${CHAR1,} + 36#${CHAR2,}) % 26 )); RESULT="${RESULT}${RESULT:+,}$(printf '%c' $((97+SUM)))"; done; echo "$RESULT"
+printf "%o\n" $(( $((5#$(echo $WATER | tr water 01234))) + $((5#$(echo $STIR | tr stir. 01234))) )) | tr 01234567 bestchoil
